@@ -139,18 +139,18 @@ namespace Identify.Controllers
         //    ApplicationUser usr = await GetCurrentUserAsync();
         //    return View(usr);
         //}
-        //[HttpGet]
-        //[Authorize]
-        //public async Task<IActionResult> ChangePassword(PasswordVM model)
-        //{
-        //    //PasswordVM model = new PasswordVM();
-        //    var user = await userManager.GetUserAsync(HttpContext.User);
-        //    var token = await userManager.GeneratePasswordResetTokenAsync(user);
-        //    model.UserID = user.Id;
-        //    model.Email = user.Email;
-        //    model.BaseCode = token;
-        //    return View(model);
-        //}
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> ChangePassword(PasswordVM model)
+        {
+            //PasswordVM model = new PasswordVM();
+            var user = await userManager.GetUserAsync(HttpContext.User);
+            var token = await userManager.GeneratePasswordResetTokenAsync(user);
+            model.UserID = user.Id;
+            model.Email = user.Email;
+            model.BaseCode = token;
+            return View(model);
+        }
         //[HttpPost]
         //public async Task<IActionResult> ChangePasswordConfirm(PasswordVM model)
         //{
