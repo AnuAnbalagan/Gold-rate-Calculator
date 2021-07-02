@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HGD0KFV55qRKW52otsdVPuBxQ56bAO7N6++6bzOJ4QFtcU1S5XaBOAOW4u96pGosyueGkKP7IO9AldzmVSiXzQ==",
+  "dgSpecHash": "wLwl8wUchL1IbhHI7IRlh5zM3Qumh7S8TEFAvlN4FnzBzi5eqU2AuUnXwCpghUQbrvPPwcNdGyLzUo/YOEc/iw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Asifs\\Downloads\\Identify\\Identify\\Identify.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asifs\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Asifs\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\5.0.7\\microsoft.aspnetcore.authentication.facebook.5.0.7.nupkg.sha512",
+    "C:\\Users\\Asifs\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.7\\microsoft.aspnetcore.authentication.google.5.0.7.nupkg.sha512",
     "C:\\Users\\Asifs\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.7\\microsoft.aspnetcore.cryptography.internal.5.0.7.nupkg.sha512",
     "C:\\Users\\Asifs\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.7\\microsoft.aspnetcore.cryptography.keyderivation.5.0.7.nupkg.sha512",
     "C:\\Users\\Asifs\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

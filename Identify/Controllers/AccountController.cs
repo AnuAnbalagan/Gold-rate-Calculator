@@ -151,25 +151,25 @@ namespace Identify.Controllers
             model.BaseCode = token;
             return View(model);
         }
-        //[HttpPost]
-        //public async Task<IActionResult> ChangePasswordConfirm(PasswordVM model)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        var user = await userManager.FindByIdAsync(model.UserID);
-        //        var result = await userManager.ChangePasswordAsync(user, model.OldPassword, model.Password);
-        //        if (result.Succeeded)
-        //        {
-        //            return RedirectToAction(nameof(Profile));
-        //        }
-        //        else
-        //        {
-        //            model.Errormessage = "Password did not match";
-        //            return View("ChangePassword", model);
-        //        }
-        //    }
-        //    return View("ChangePassword", model);
-        //}
+        [HttpPost]
+        public async Task<IActionResult> ChangePasswordConfirm(PasswordVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await userManager.FindByIdAsync(model.UserID);
+                var result = await userManager.ChangePasswordAsync(user, model.OldPassword, model.Password);
+                if (result.Succeeded)
+                {
+                    return Redirect("/Home/Index");
+                }
+                else
+                {
+                    model.Errormessage = "Password did not match";
+                    return View("ChangePassword", model);
+                }
+            }
+            return View("ChangePassword", model);
+        }
 
         //[HttpGet]
         //[Authorize]

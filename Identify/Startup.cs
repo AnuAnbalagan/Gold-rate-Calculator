@@ -41,7 +41,7 @@ namespace Identify
                   options.Password.RequireNonAlphanumeric = false;
               }).AddEntityFrameworkStores<AppDbContext>()
               .AddDefaultTokenProviders();
-
+           
             services.ConfigureApplicationCookie(
                 options =>
                 {
@@ -49,7 +49,20 @@ namespace Identify
                     options.AccessDeniedPath = new PathString("/Account/AccessDenied");
                     options.LogoutPath = new PathString("/Account/Logout");
                 });
+            //services.AddAuthentication()
+            //    .AddFacebook(facebookOptions =>
+            //    {
+            //        facebookOptions.AppId = Configuration["externals_facebook:AppId"];
+            //        facebookOptions.AppSecret = Configuration["externals_facebook:AppSecret"];
+            //    })
+            //    .AddGoogle(options =>
+            //    {
+            //        IConfigurationSection googleAuthNSection =
+            //            Configuration.GetSection("externals_google");
 
+            //        options.ClientId = googleAuthNSection["ClientId"];
+            //        options.ClientSecret = googleAuthNSection["ClientSecret"];
+            //    });
             services.Configure<ForwardedHeadersOptions>(options => options.ForwardedHeaders =
                       ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto);
             services.AddMemoryCache();

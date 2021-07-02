@@ -434,3 +434,6 @@ C:\Users\Asifs\Downloads\Identify\Identify\obj\Debug\net5.0\ref\Identify.dll
 C:\Users\Asifs\Downloads\Identify\Identify\obj\Debug\net5.0\Identify.pdb
 C:\Users\Asifs\Downloads\Identify\Identify\obj\Debug\net5.0\Identify.genruntimeconfig.cache
 C:\Users\Asifs\Downloads\Identify\Identify\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\Asifs\Downloads\Identify\Identify\obj\Debug\net5.0\Razor\Views\Account\ChangePassword.cshtml.g.cs
+C:\Users\Asifs\Downloads\Identify\Identify\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\Users\Asifs\Downloads\Identify\Identify\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
